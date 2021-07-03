@@ -6,6 +6,13 @@ body, html {
   background-color: #fff1d2;
   color: #212121;
 }
+.wrapper {
+  margin-right: auto; 
+  margin-left:  auto; 
+  max-width: 960px; 
+  padding-right: 10px; 
+  padding-left:  10px; 
+}
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
