@@ -46,6 +46,10 @@ a:active {
   background-color: #212121;
 }
 
+dfn a {
+  font-weight:bold;
+}
+
 /* hero */
 /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
 .hero-image {
@@ -67,5 +71,14 @@ a:active {
   text-shadow: yellow 0px 0px 30px;
 }
 
+/* nav */
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
 
-
+/* iframe */
+iframe {
+  display: block;
+  margin: 0 auto;
+}
