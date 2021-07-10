@@ -42,8 +42,21 @@
       </div>
     </div>
     <div class="wrapper">
+      <main>
+        <section>
       <h2>Semantic HTML and Screen Readers</h2>
 
+      <p>The word "semantic" means "meaning".  The HTML elements have names and some of
+        these name imply functionality and some don't.  For example, <code>h1</code> means
+        <strong>Header 1</strong>. We know there is only one <code>h1</code> element on a 
+        web page.  If a screen reader encounter this header, it can deduce that This
+        is the primary header for the web page and create a meaningful response based
+        on that.
+      </p>
+      <p>On the other hand, the <code>div</code> element was created to help with page layout.
+      It doesn't provide any meaninful informations about the content of the document. Ascreen reader
+       will ignore a <code>div</code> tag.
+      </p>
       <p>
         In this module, we're going to look at an aspect of Semantic coding that
         affects interactivity. An HTML <code>button</code> looks like a button
@@ -51,12 +64,28 @@
         it is the way to code a clickable element in HTML. In this example,
         we'll see that we can make any item clickable in the sense that we can
         trigger an action based on a click. The problem is that a screen reader
-        won't find a name unless it's a button. We'll see how to check look for
+        won't find a a clickable element unless it's a button or a link. We'll see how to check  for
         this name in the Chrome browser.
       </p>
-    </div>
+      <p>In the code sandbox below, we show that we can style a <code>div</code> to
+        look like a button.  It's also possible to add a click event to any element
+        using JavaScript or an <code>onclick</code> HTML attribute.  This will cause 
+        problems for a person using a screen reader though.
+      </p>
 
-    <iframe
+      <h2>
+        Interact with the Buttons in the Sandbox
+      </h2>
+      <p>
+        Try clicking on the buttons in the sandbox.  You'll see that they all respond 
+        to click events with a JavaScript <code>alert</code>.
+      </p>
+    </section>
+ 
+
+
+<section class="codesanbox">
+    <iframe alt="codesandbox"
       src="https://codesandbox.io/embed/qu-semantic-button-b8sg5?fontsize=14&hidenavigation=1&theme=dark"
       style="
         width: 80%;
@@ -67,14 +96,18 @@
       "
       title="qu-semantic-button"
       allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; xr-spatial-tracking"
-      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-scripts"
     ></iframe>
+</section>
 
-    <div class="wrapper">
+    
+<section>
+
       <h2>SEO Benefits to Semantic HTML</h2>
 
       <div><a href="./contrast.html">Colors and Contrast</a></div>
-    </div>
+    </section>
+    </main>
 
     <footer>
       <p>R. Peltz 2021 QU 530</p>

@@ -93,6 +93,10 @@ dfn a {
   text-shadow: yellow 0px 0px 30px;
 }
 
+.hero-text h1 {
+  margin: 0 10px;
+}
+
 /* nav */
 nav {
   font-family: Roboto;
