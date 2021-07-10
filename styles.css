@@ -6,6 +6,9 @@ body, html {
   background-color: #fff1d2;
   color: #212121;
 }
+body {
+  margin-top:0;
+}
 .wrapper {
   margin-right: auto; 
   margin-left:  auto; 
