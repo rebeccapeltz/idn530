@@ -7,6 +7,10 @@
     <title>Web Accessibility | Training</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
@@ -15,27 +19,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+
   </head>
 
   <body>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./tools.html">Guidelines and Tools</a>
+        <a href="./semantics.html">Semantics</a>
+        <a href="./contrast.html">Contrast</a>
+        <a href="./media.html">Media</a>
+        <a href="./summary.html">Summary</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
     <div class="hero-image">
       <div class="hero-text">
         <h1 style="font-size: 50px">Accessibility on the Web for eLearning</h1>
         <p>Short Course</p>
       </div>
     </div>
-    <div class="wrapper">
-      <nav>
-        <ul>
-          <li><a href="./index.html">Intro</a></li>
-          <li><a href="./tools.html">Guidelines and Tools</a></li>
-          <li><a href="./semantics.html">Semantics</a></li>
-          <li><a href="./contrast.html">Contrast</a></li>
-          <li><a href="./media.html">Media</a></li>
-          <li><a href="./summary.html">Summary</a></li>
-        </ul>
-      </nav>
 
+    <div class="wrapper">
       <p>
         The web has become like an online University with courses in every
         discipline. In order to teach effectively, it is necessary to learn and
@@ -50,21 +58,13 @@
         online learning. By the end of this course you should be able to:
       </p>
       <ul>
-        <li>Describe Web Accessbility</li>
-        <li>
-          Provide reasons why it's important to follow web accessbility
-          guidelines
-        </li>
-        <li>
-          Describe the organizations that prescribe web accessibility guidelines
-        </li>
-        <li>
-          Understand the legal ramifications of serving content on a website
-          that doesn't follow the guidelines
-        </li>
-        <li>Provide examples of web accessibility guidelines</li>
-        <li>Use tools to measure your web page's accessibility</li>
-        <li>Update a web page that has missing web accessbility elements</li>
+        Describe Web Accessbility Provide reasons why it's important to follow
+        web accessbility guidelines Describe the organizations that prescribe
+        web accessibility guidelines Understand the legal ramifications of
+        serving content on a website that doesn't follow the guidelines Provide
+        examples of web accessibility guidelines Use tools to measure your web
+        page's accessibility Update a web page that has missing web accessbility
+        elements
       </ul>
 
       <h2>What is Web Accessibility</h2>
@@ -159,19 +159,15 @@
         In addition to the web providing it's own guidelines, other
         organizations have input:
       </p>
-      <ul>
-        <li>
-          The US Departement of Justice provides a
-          <a href="https://www.ada.gov/pcatoolkit/chap5toolkit.htm"> toolkit</a>
-          to support web creation per the Americans with Disabilities Act (ADA)
-        </li>
-        <li>
-          Section 508, which mandates that all federal agencies make websites
-          available to people with disabilities. This mandate applies to
-          companies and educational institutions that receive federal grant
-          money as well as federal workplaces.
-        </li>
-      </ul>
+      <blockquote>
+        The US Departement of Justice provides a
+        <a href="https://www.ada.gov/pcatoolkit/chap5toolkit.htm"> toolkit</a>
+        to support web creation per the Americans with Disabilities Act (ADA)
+        Section 508, which mandates that all federal agencies make websites
+        available to people with disabilities. This mandate applies to companies
+        and educational institutions that receive federal grant money as well as
+        federal workplaces.
+      </blockquote>
 
       <p>
         A number of lawsuits have been filed over the years that are related to
@@ -227,8 +223,11 @@
       <p>R. Peltz 2021 QU 530</p>
       <p>
         <a href="https://github.com/rebeccapeltz/idn530" target="_blank"
-          >Code Repo</a>
+          >Code Repo</a
+        >
       </p>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

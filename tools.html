@@ -7,6 +7,10 @@
     <title>Web Accessibility | Training</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
@@ -18,6 +22,19 @@
   </head>
 
   <body>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./tools.html" class="active">Guidelines and Tools</a>
+        <a href="./semantics.html">Semantics</a>
+        <a href="./contrast.html">Contrast</a>
+        <a href="./media.html">Media</a>
+        <a href="./summary.html">Summary</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
     <div class="hero-image">
       <div class="hero-text">
         <h1 style="font-size: 50px">Accessibility on the Web for eLearning</h1>
@@ -25,133 +42,274 @@
       </div>
     </div>
     <div class="wrapper">
-    <nav>
+      <h2>Web Accessibility Guidelines</h2>
+      <p>
+        <a href="https://www.w3.org/TR/WCAG/"
+          >Web Content Accessbility Guidelines (WCAG)</a
+        >
+        is a list of "Success Criteria" that can help a web page to meet the
+        requirements for a web page to be easy to use, even with a disability.
+        These requirements are broken down into categories representing 5
+        dimensions of accessibility. The list below names the dimensions and
+        provides some examples of success criteria in each dimension. The
+        Conformance category provides measures that can be use to specify how
+        well a web page conforms to the guidelines. The list below is just a
+        subset of the complete set of guidelines.
+      </p>
+
+      <ol>
+        <li>
+          Perceivable
+          <ul>
+            <li>
+              Interactive controls: If non-text content is a control or accepts
+              user input, then it has a name that describes its purpose. It's
+              possible to make any element clickable, but this may fail this
+              guideline.
+            </li>
+            <li>
+              Prerecorded audio or video: An alternative must be supplied in a
+              format that conveys the same information, like a transcript.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Operable
+          <ul>
+            <li>
+              Keyboard: All functionality is operable through the keyboard.
+            </li>
+            <li>
+              To prevent seizures: Web pages cannot have flashed that occur more
+              than 3 times in a second.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Understandable
+          <ul>
+            <li>
+              Language: The default language of each page can be programatically
+              determined.
+            </li>
+            <li>
+              Abbreviations: There must be a mechanism for evaluating all
+              abbreviations.
+            </li>
+            <li>
+              Predictable Navigation: The navigation must use the same relative
+              order across all pages.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Robust
+          <ul>
+            <li>
+              Assistive devices: Maximize compatibility with assistive devices
+              like screen reader. This means don't forget closing braces on HTML
+              tags.
+            </li>
+            <li>
+              Status messages: Roles or attributes of elements must be available
+              so assistive agents can determine status of elements even if they
+              are not in focus.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Conformance
+          <ul>
+            <li>
+              Each website owner compiles a list of guidelines or a given level
+              of performance, and the calculates the percentage that have been
+              met for that level.
+            </li>
+            <li>
+              There are 3 levels for each of the guidelines, A, AA, and AAA. A
+              web page must meet all conformance criteria for a level in order
+              to report that level.
+            </li>
+            <li>
+              In order to achieve conformance, it must be true for the whole web
+              page. If there is a section that the web page author can't
+              control, they need to file a statement of partial conformance.
+            </li>
+            <li>
+              If a web page is part of a series of web pages, they all must
+              conform in order for one of them to conform.
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Semantics</h2>
+      <p>
+        The word "semantic" means "meaning". Assistive technologies like screen
+        readers rely on textual semantics. The guidelines provide a series of
+        terms that can be include in the HTML code to help with interpretation.
+        Form input is a place where this is especially important. When a
+        developer names an input, it's recommended to name it using these terms.
+        The list below shows terms you could use for a person's name.
+      </p>
       <ul>
-        <li><a href="./index.html">Intro</a></li>
-        <li><a href="./tools.html">Guidelines and Tools</a></li>
-        <li><a href="./semantics.html">Semantics</a></li>
-        <li><a href="./contrast.html">Contrast</a></li>
-        <li><a href="./media.html">Media</a></li>
-        <li><a href="./summary.html">Summary</a></li>
+        <li>
+          name - Full name honorific-prefix - Prefix or title (e.g., "Mr.",
+          "Ms.", "Dr.", "Mlle")
+        </li>
+        <li>
+          given-name - Given name (in some Western cultures, also known as the
+          first name)
+        </li>
+        <li>
+          additional-name - Additional names (in some Western cultures, also
+          known as
+        </li>
+        <li>middle names, forenames other than the first name)</li>
+        <li>
+          family-name - Family name (in some Western cultures, also known as the
+          last name or surname)
+        </li>
+        <li>honorific-suffix - Suffix (e.g., "Jr.", "B.Sc.", "MBASW", "II")</li>
+        <li>
+          nickname - Nickname, screen name, handle: a typically short name used
+          instead of the full name
+        </li>
       </ul>
-    </nav>
-    
-   
-    <h2>Web Accessibility Guidelines</h2>
-    <p><a href="https://www.w3.org/TR/WCAG/">Web Content Accessbility Guidelines (WCAG)</a> is a list of "Success Criteria" that can help a web page to meet the requirements for a web page to be easy to use, even with a disability. These requirements are
-        broken down into categories representing 5 dimensions of accessibility. The list below names the dimensions and provides some examples of success criteria in each dimension. The Conformance category provides measures that can be use to specify
-        how well a web page conforms to the guidelines. The list below is just a subset of the complete set of guidelines.
-    </p>
-
-    <ol>
-        <li>Perceivable
-            <ul>
-                <li>Interactive controls: If non-text content is a control or accepts user input, then it has a name that describes its purpose. It's possible to make any element clickable, but this may fail this guideline.</li>
-                <li>Prerecorded audio or video: An alternative must be supplied in a format that conveys the same information, like a transcript. </li>
-            </ul>
-        </li>
-        <li>Operable
-            <ul>
-                <li>Keyboard: All functionality is operable through the keyboard.</li>
-                <li>To prevent seizures: Web pages cannot have flashed that occur more than 3 times in a second.</li>
-            </ul>
-        </li>
-        <li>Understandable
-            <ul>
-                <li>Language: The default language of each page can be programatically determined.</li>
-                <li>Abbreviations: There must be a mechanism for evaluating all abbreviations.</li>
-                <li>Predictable Navigation: The navigation must use the same relative order across all pages.</li>
-            </ul>
-        </li>
-        <li>Robust
-            <ul>
-                <li>Assistive devices: Maximize compatibility with assistive devices like screen reader. This means don't forget closing braces on HTML tags.
-                </li>
-                <li>Status messages: Roles or attributes of elements must be available so assistive agents can determine status of elements even if they are not in focus.
-                </li>
-            </ul>
-        </li>
-        <li>Conformance
-            <ul>
-                <li>Each website owner compiles a list of guidelines or a given level of performance, and the calculates the percentage that have been met for that level.</li>
-                <li>There are 3 levels for each of the guidelines, A, AA, and AAA. A web page must meet all conformance criteria for a level in order to report that level.
-                </li>
-                <li>In order to achieve conformance, it must be true for the whole web page. If there is a section that the web page author can't control, they need to file a statement of partial conformance.
-                </li>
-                <li>If a web page is part of a series of web pages, they all must conform in order for one of them to conform.</li>
-            </ul>
-        </li>
-
-    </ol>
-
-    <h2>Semantics</h2>
-    <p> The word "semantic" means "meaning". Assistive technologies like screen readers rely on textual semantics. The guidelines provide a series of terms that can be include in the HTML code to help with interpretation. Form input is a place where this is
-        especially important. When a developer names an input, it's recommended to name it using these terms. The list below shows terms you could use for a person's name.
-    </p>
-    <ul>
-        <li>name - Full name honorific-prefix - Prefix or title (e.g., "Mr.", "Ms.", "Dr.", "Mlle")</li>
-        <li>given-name - Given name (in some Western cultures, also known as the first name)</li>
-        <li> additional-name - Additional names (in some Western cultures, also known as</li>
-        <li>middle names, forenames other than the first name) </li>
-        <li>family-name - Family name (in some Western cultures, also known as the last name or surname)</li>
-        <li> honorific-suffix - Suffix (e.g., "Jr.", "B.Sc.", "MBASW", "II")</li>
-        <li> nickname - Nickname, screen name, handle: a typically short name used instead of the full name</li>
-    </ul>
-    <p>We'll see examples of the importance of semantics in future modules where we look directly at HTML code. Besides the naming of inputs, we'll see that the HTML tags we used provide semantic information.
-    </p>
-    <h2>Tools to Identify Accessibility Problems</h2>
-    <p>There are many tools that can provide feedback that will let a developer know how well they are conforming to the guideslines. We'll look at 4 of them here.</p>
-    <ol>
+      <p>
+        We'll see examples of the importance of semantics in future modules
+        where we look directly at HTML code. Besides the naming of inputs, we'll
+        see that the HTML tags we used provide semantic information.
+      </p>
+      <h2>Tools to Identify Accessibility Problems</h2>
+      <p>
+        There are many tools that can provide feedback that will let a developer
+        know how well they are conforming to the guideslines. We'll look at 4 of
+        them here.
+      </p>
+      <ol class="tool-list">
         <li>
-            <a href="https://validator.w3.org/">HTML Validation Checker:</a> The first step in creting accesible web pages is writing valid HTML. This tools will run a check on your web page to show any invalid HTML.
-            <img src="./images/html-validator.jpg" width="40%" alt="HTML Validator website"> </li>
-        <li>
-            <a href="https://wave.webaim.org/">Wave:</a> This web site will evaluate your web page along a variety of measures including Errors, Contrast Errors, Alerts, Features, Structural Elements and <dfn>ARIA</dfn>Accessible Rich Internet Applications
-            is a set of attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.</li>
-        <img src="./images/wave.jpg" width="40%" alt="WAVE error checking tool for accessbibility"> </li>
-        <li>
-            <a href="https://developers.google.com/web/tools/lighthouse/">Google Lighthouse: </a>If you are using the Google browser, you can access this by navigating to the web page, and then right clicking and choosing <strong>Inspector</strong>. Then
-            you can choose to run the accessibility test.
-            <img src="./images/lighthouse-1.jpg" width="40%" alt="Chrome lighthouse tool">
-            <img src="./images/lighthouse.jpg" width="40%" alt="Chrome lighthouse tool results">
+          <a href="https://validator.w3.org/">HTML Validation Checker:</a> The
+          first step in creating accesible web pages is writing valid HTML. This
+          tools will run a check on your web page to show any invalid HTML.
+          <div>
+            <img
+              src="./images/html-validator.jpg"
+              width="400px"
+              height="auto"
+              alt="HTML Validator website"
+            />
+          </div>
         </li>
         <li>
-            <a href="https://www.deque.com/axe/">Axe:</a> This is a Chrome browser extension. Once you have installed it, you go to Chrome Inspector and click on "axe-coconum". Then choose to scan the whole page and you'll gt a list of issues if there
-            are any.
-            <img src="./images/axe.jpg" width="40%" alt="Axe tool for testing web accessbility">
-            <img src="./images/axe-2.jpg" width="40%" alt="Axe tool results">
+          <a href="https://wave.webaim.org/">Wave:</a> This web site will
+          evaluate your web page along a variety of measures including Errors,
+          Contrast Errors, Alerts, Features, Structural Elements and
+          <dfn>ARIA</dfn>Accessible Rich Internet Applications is a set of
+          attributes that define ways to make web content and web applications
+          (especially those developed with JavaScript) more accessible to people
+          with disabilities.
+          <div>
+            <img
+              src="./images/wave.jpg"
+              width="400px"
+              height="auto"
+              alt="WAVE error checking tool for accessbibility"
+            />
+          </div>
         </li>
-    </ol>
-    <h2>Experience a Screen Reader</h2>
-    <p>As we noted in the first module, many Americans have visual disabilities and because the web is so visual, you may want to experience for yourself interacting with a screen reader.The Mac has a built in screen reader. For Windows, you can download
-        and install one.
-    </p>
-    <ul>
-        <li>Mac:
-            <a href="https://www.disability.illinois.edu/academic-support/assistive-technology/mac-os-x-voiceover">Instructions for using the Mac screen reader</a>
-        </li>
-        <li>Windows:
-            <a href="https://www.nvaccess.org/download/">Instructions for downloading and installing NVDA</a>
-        </li>
-        <li>The chrome browser offers a
-            <a href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en">screen reader extension</a>
-        </li>
-    </ul>
 
-    <h3>Next Step</h3>
-    <p>In the next module, we'll look at how to improve accessibility by providing good Semantics in HTML.
-    </p>
-    <div>
+        <li>
+          <a href="https://developers.google.com/web/tools/lighthouse/"
+            >Google Lighthouse: </a
+          >If you are using the Google browser, you can access this by
+          navigating to the web page, and then right clicking and choosing
+          <strong>Inspector</strong>. Then you can choose to run the
+          accessibility test.
+          <div>
+            <img
+              src="./images/lighthouse-1.jpg"
+              width="400px"
+              height="auto"
+              alt="Chrome lighthouse tool"
+            />
+            <img
+              src="./images/lighthouse.jpg"
+              width="400px"
+              height="auto"
+              alt="Chrome lighthouse tool results"
+            />
+          </div>
+        </li>
+        <li>
+          <a href="https://www.deque.com/axe/">Axe:</a> This is a Chrome browser
+          extension. Once you have installed it, you go to Chrome Inspector and
+          click on "axe-coconum". Then choose to scan the whole page and you'll
+          gt a list of issues if there are any.
+          <div>
+            <img
+              src="./images/axe.jpg"
+              width="400px"
+              height="auto"
+              alt="Axe tool for testing web accessbility"
+            />
+            <img
+              src="./images/axe-2.jpg"
+              width="400px"
+              height="auto"
+              alt="Axe tool results"
+            />
+          </div>
+        </li>
+      </ol>
+      <h2>Experience a Screen Reader</h2>
+      <p>
+        As we noted in the first module, many Americans have visual disabilities
+        and because the web is so visual, you may want to experience for
+        yourself interacting with a screen reader.The Mac has a built in screen
+        reader. For Windows, you can download and install one.
+      </p>
+      <ul>
+        <li>
+          Mac:
+          <a
+            href="https://www.disability.illinois.edu/academic-support/assistive-technology/mac-os-x-voiceover"
+            >Instructions for using the Mac screen reader</a
+          >
+        </li>
+        <li>
+          Windows:
+          <a href="https://www.nvaccess.org/download/"
+            >Instructions for downloading and installing NVDA</a
+          >
+        </li>
+        <li>
+          The chrome browser offers a
+          <a
+            href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en"
+            >screen reader extension</a
+          >
+        </li>
+      </ul>
+
+      <h3>Next Step</h3>
+      <p>
+        In the next module, we'll look at how to improve accessibility by
+        providing good Semantics in HTML.
+      </p>
+      <div>
         <a href=" ./semantics.html ">Semantic HTML</a>
+      </div>
     </div>
-    </div>
-   
-    <footer>
-        <p>R. Peltz 2021 QU 530</p>
-        <p>
-            <a href="https://github.com/rebeccapeltz/idn530" target="_blank">Code Repo</a>
-        </p>
-    </footer>
-</body>
 
+    <footer>
+      <p>R. Peltz 2021 QU 530</p>
+      <p>
+        <a href="https://github.com/rebeccapeltz/idn530" target="_blank"
+          >Code Repo</a
+        >
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
