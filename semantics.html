@@ -67,24 +67,35 @@
         won't find a a clickable element unless it's a button or a link. We'll see how to check  for
         this name in the Chrome browser.
       </p>
+     
+      <section class="codesanbox">
+      <h2>
+        Interact with the Buttons in the Code Sandbox
+      </h2>
       <p>In the code sandbox below, we show that we can style a <code>div</code> to
         look like a button.  It's also possible to add a click event to any element
         using JavaScript or an <code>onclick</code> HTML attribute.  This will cause 
         problems for a person using a screen reader though.
       </p>
-
-      <h2>
-        Interact with the Buttons in the Sandbox
-      </h2>
       <p>
         Try clicking on the buttons in the sandbox.  You'll see that they all respond 
         to click events with a JavaScript <code>alert</code>.
       </p>
+      <p>ARIA is a technique for adding semantics to unsemantic web tags like 
+        <code>div</code>.  Just add attribute <code>role="button"</code> to the 
+        <code>div</code> tags and these elements will be understood to semantically 
+        behave as buttons.
+      </p>
+      <!-- <p>You can open the sandbox in a new window, by clicking on the icon in the bottom
+        right of the sandbox. <img src="./images/open-code-sandbox.jpg" width="75px" height="75px" alt="image showing
+        open code sandbox in new window">
+      </p>
+      The way  -->
     </section>
  
 
 
-<section class="codesanbox">
+
     <iframe alt="codesandbox"
       src="https://codesandbox.io/embed/qu-semantic-button-b8sg5?fontsize=14&hidenavigation=1&theme=dark"
       style="
@@ -104,7 +115,25 @@
 <section>
 
       <h2>SEO Benefits to Semantic HTML</h2>
+      <p>
+      If you're using the web to distribute educational materials, you may want 
+      them to be found using search tools.  <dfn>SEO</dfn> is an acronym for 
+      Search Engine Optimization.  You can improve your web site's searchability 
+      by using semantic layout. An example of semantic layout is shown below.  
+      </p>
 
+      <p>The image below shows one example of a semantic layout.  When a search
+        engine web crawler encounters a page laid out like this, it has a lot easier 
+        time parsing the content.  Just like a screen reader, a web crawler benefits 
+        from a meaningful lauyout.  This can be achieved with Semantic HTML and 
+        ARIA.
+      </p>
+      <figure>
+        <img src="./images/codeproject-semantic-layout.png" alt="sematic layout" width="80%">
+        <figcaption>Sematic Web Layout from <a href="https://www.codeproject.com/Articles/146409/Semantic-HTML5-Page-Layout">Codeproject</a>
+
+        </figcaption>
+      </figure>
       <div><a href="./contrast.html">Colors and Contrast</a></div>
     </section>
     </main>
