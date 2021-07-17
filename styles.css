@@ -163,3 +163,15 @@ iframe {
   margin: 0 auto;
   max-width: 100%;
 }
+
+/* add stroke to text */
+.stroke{
+color: #fff1d2;
+-webkit-text-fill-color: black; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #fff1d2;
+}
+
+h1 {
+  font-size: 5rem;
+}
