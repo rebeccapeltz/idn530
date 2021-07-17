@@ -100,6 +100,7 @@ dfn a {
 /* nav */
 nav {
   font-family: Roboto;
+  border: 1px #212121 solid;
 }
 
 .topnav {
