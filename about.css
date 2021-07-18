@@ -4,8 +4,9 @@ html {
   color: white;
   line-height: 1.6;
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
+
 .nav-grid {
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
@@ -16,18 +17,18 @@ nav {
   margin: 2rem 0;
   text-align: center;
 }
-nav a {
+a {
   margin: 1rem 0;
   padding-right: 1rem;
   color: white;
   text-decoration: none;
 }
-nav a:hover {
+a:hover {
   color: white;
   background-color: #333;
 }
 
-nav a:active {
+a:active {
   color: black;
   background-color: #333;
 }
@@ -36,7 +37,7 @@ nav .active {
 }
 
 .desc-grid {
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   grid-gap: 1rem;
@@ -59,7 +60,7 @@ nav .active {
   grid-template-columns: 4fr 4fr 4fr;
   grid-gap: 1rem; */
   /* border: 1px solid black; */
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .cta-grid div div {
   display: inline-block;
@@ -94,4 +95,24 @@ nav .active {
   width: 33px;
   height: 42px;
   margin-top: 25px;
+}
+@media screen and (max-width: 500px) {
+  body,
+  html {
+    font-size: 1rem;
+  }
+  .personal-grid {
+    grid-template-columns: 1fr;
+  }
+  .personal-grid div {
+    margin: 0 0;
+    /* text-ali?gn: center; */
+  }
+  .pic{
+    text-align: center;
+  }
+  .personal-grid img{
+   display: inline-block;
+  text-align: center;
+  }
 }
