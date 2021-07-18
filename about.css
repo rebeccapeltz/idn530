@@ -1,0 +1,95 @@
+body,
+html {
+    background-color: #212121;
+    color: white;
+    line-height: 1.6;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-gap: 1rem;
+  border: 1px solid black;
+}
+nav {
+     margin: 2rem 0;
+}
+nav  a{
+    margin: 1rem 0;
+    padding-right: 1rem;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: white;
+    background-color: #333;
+  }
+  
+  nav a.active {
+    color: black;
+    background-color: #333;
+  }
+
+
+.desc-grid {
+    margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 1rem;
+  /* border: 1px solid white; */
+}
+.personal-grid div {
+    margin: 1rem 0;
+}
+.personal-grid img {
+    /* border: 2px solid white; */
+}
+.personal-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr 5fr 2fr;
+  grid-gap: 1rem;
+  /* border: 1px solid black; */
+}
+.cta-grid {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-gap: 1rem;
+  /* border: 1px solid black; */
+  margin-top: 3rem;
+}
+.cta-grid div div {
+    display: inline-block;
+}
+
+.email {
+    background-color: white;
+    -webkit-mask: url(./images/email-line.svg) no-repeat center;
+    mask: url(./images/email-line.svg) no-repeat center;
+}
+ .linkedin {
+    background-color: white;
+    -webkit-mask: url(./images/social-linkedin.svg) no-repeat center;
+    mask: url(./images/social-linkedin.svg) no-repeat center;
+}
+.email-icon {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+  }
+  .li-icon{
+    width: 100px;
+    height: 75px;
+    margin-top: 4px;
+  }
+  .github{
+    background-color: white;
+    -webkit-mask: url(./images/github.svg) no-repeat center;
+    mask: url(./images/github.svg) no-repeat center;
+  }
+  .gh-icon{
+    width: 50px;
+    height: 42px;
+    margin-top: 25px;
+  }
+
+
