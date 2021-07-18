@@ -15,9 +15,16 @@
       rel="stylesheet"
     />
     <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+    rel="stylesheet"
+  />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Slab:wght@200;400&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
@@ -62,6 +69,36 @@
           <li>Logos and Brandnames: no requirement</li>
         </ol>
       </p>
+
+      <p>You can improved perceived contrast by using halo or outline with text.  The title in This
+        document uses creates an outline effect with color and the new CSS 
+        <a href="https://css-tricks.com/adding-stroke-to-web-text/" 
+        target="_blank">text-stroke</a> property. With the 
+        stroke property you can assign color and width to create an outline effect.
+
+        These are equivalent in terms of contrast:
+      </p>
+
+      <p class="quote">
+        Weeds are flowers too, once you get to know them.<br>
+        A. A. Milne
+      </p>
+
+      <p class="quote-stroke">
+        Weeds are flowers too, once you get to know them.<br>
+        A. A. Milne
+      </p>
+  
+
+      <h2>Adobe Color Can Help</h2>
+     <p><a href="https://adobe.color.com" alt="Adobe color website tools">Adobe Color</a> is a website 
+      that serves as a powerful tool for ensuring that you meet WCAG AA minimum guideline for contrast.
+      The navy and white lettering above can be tested for the WCAG Level.  The image belows shows that 
+      it measures 16.01:1, far exceeding the minimum requirement by the WCAG. 
+    </p> 
+    <div><img class="adobe-color-measure" width="800" height="100%" src="./images/contrast-navy-and-white.png" alt="contrast measure in Adobe Color"></div>
+
+
 
       <h2>Disabilities and Color</h2>
 
