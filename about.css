@@ -76,6 +76,11 @@ nav .active {
   -webkit-mask: url(./images/linkedin-fill.svg) no-repeat center;
   mask: url(./images/linkedin-fill.svg) no-repeat center;
 }
+.portfolio {
+  background-color: white;
+  -webkit-mask: url(./images/briefcase-alt.svg) no-repeat center;
+  mask: url(./images/briefcase-alt.svg) no-repeat center;
+}
 .email-icon {
   width: 50px;
   height: 50px;
@@ -92,6 +97,11 @@ nav .active {
   mask: url(./images/github.svg) no-repeat center;
 }
 .gh-icon {
+  width: 33px;
+  height: 42px;
+  margin-top: 25px;
+}
+.portfolio-icon {
   width: 33px;
   height: 42px;
   margin-top: 25px;
