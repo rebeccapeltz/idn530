@@ -204,3 +204,14 @@ color: #fff1d2;
 h1 {
   font-size: 5rem;
 }
+
+.wcag-guideline {
+  display: block;
+}
+a:visited.wcag-guideline,
+a:hover.wcag-guideline , 
+a:visited.wcag-guideline ,
+a:active.wcag-guideline {
+  color: #212121 !important;
+  background-color: #FFFEDB;
+}

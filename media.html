@@ -13,9 +13,9 @@
     <link rel="shortcut icon" type="image/png" href="./images/accessibility.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -49,9 +49,37 @@
     </div>
 
     <div class="wrapper">
-          <h2>Accessible Images</h2>
+      <h2>Accessible Images</h2>
+<p>As you may recall from the introduction to the course, Target settled 
+  a $6 billion  lawsuit and it was because they had not included alt tags 
+  to explain what was in their images.  Many websites that serve up a lot of 
+  images will automate the process of providing alt tags.  An image tag should 
+  look like this:
+</p>
+<blockquote>
+  <code>
+    &lt;img src="path/to/img-of-a-cat.jpg" alt="Image of a cat"&gt; 
+  </code>
+</blockquote>
 
       <h2>Accessible Video</h2>
+      <p>
+To make video accessible you need to create subtitles and/or captions.  Subtitles 
+are words and they are baked  in to the video, which means you don't turn them 
+on an off.  You need an .SRT (SubRip Subtitle ) file to create subtitles. You can 
+also use a .VTT file for subtitles and it can be used for  Captions, aka "Closed Captions".
+Both of these are text files that you can edit. The text is associated with 
+points on a timeline so that the text can be show to match the video timeline.
+
+      </p>
+      <p>It can be time consuming to transcribe a file manually.  There is a 
+        very popular tool, <a href="https://www.descript.com/" target="_blank">Descript</a>, that can automate 
+        the creation of the SRT and VTT files.  Here is a video that walks you 
+        through creating a subtitled video using Desript and YouTube:
+      </p>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X1sKF4S2zFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <div><a href="./summary.html">Summary and Assessment</a></div>
     </div>
 
