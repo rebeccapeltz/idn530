@@ -215,3 +215,30 @@ a:active.wcag-guideline {
   color: #212121 !important;
   background-color: #FFFEDB;
 }
+
+/* next */
+.next {
+  display: inline-block;
+  background-color: black;
+  -webkit-mask: url(./images/arrow-fat-lines-right.svg) no-repeat center;
+  mask: url(./images/arrow-fat-lines-right.svg) no-repeat center;
+}
+.next-icon {
+  width: 95px;
+  height: 42px;
+  margin: 0;
+  display: inline-block;
+}
+.next-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.next-text a {
+  text-decoration: none;
+  color: #121212;
+}
+.next-text a:hover {
+  background-color:#fff1d2 ;
+}
