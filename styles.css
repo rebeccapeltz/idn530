@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p,li {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
 }
 blockquote {
   font-family: 'Inconsolata', monospace;
@@ -68,9 +69,11 @@ a:active {
   background-color: #212121;
 }
 
-dfn a {
+dfn a, dfn {
   font-weight:bold;
 }
+
+
 
 /* hero */
 /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
