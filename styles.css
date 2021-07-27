@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p,li {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
 }
 blockquote {
   font-family: 'Inconsolata', monospace;
@@ -68,9 +69,11 @@ a:active {
   background-color: #212121;
 }
 
-dfn a {
+dfn a, dfn {
   font-weight:bold;
 }
+
+
 
 /* hero */
 /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
@@ -214,4 +217,31 @@ a:visited.wcag-guideline ,
 a:active.wcag-guideline {
   color: #212121 !important;
   background-color: #FFFEDB;
+}
+
+/* next */
+.next {
+  display: inline-block;
+  background-color: black;
+  -webkit-mask: url(./images/arrow-fat-lines-right.svg) no-repeat center;
+  mask: url(./images/arrow-fat-lines-right.svg) no-repeat center;
+}
+.next-icon {
+  width: 95px;
+  height: 42px;
+  margin: 0;
+  display: inline-block;
+}
+.next-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.next-text a {
+  text-decoration: none;
+  color: #121212;
+}
+.next-text a:hover {
+  background-color:#fff1d2 ;
 }

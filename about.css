@@ -76,6 +76,11 @@ nav .active {
   -webkit-mask: url(./images/linkedin-fill.svg) no-repeat center;
   mask: url(./images/linkedin-fill.svg) no-repeat center;
 }
+.portfolio {
+  background-color: white;
+  -webkit-mask: url(./images/briefcase-alt.svg) no-repeat center;
+  mask: url(./images/briefcase-alt.svg) no-repeat center;
+}
 .email-icon {
   width: 50px;
   height: 50px;
@@ -96,6 +101,11 @@ nav .active {
   height: 42px;
   margin-top: 25px;
 }
+.portfolio-icon {
+  width: 33px;
+  height: 42px;
+  margin-top: 25px;
+}
 @media screen and (max-width: 500px) {
   body,
   html {
@@ -106,7 +116,6 @@ nav .active {
   }
   .personal-grid div {
     margin: 0 0;
-    /* text-ali?gn: center; */
   }
   .pic{
     text-align: center;
