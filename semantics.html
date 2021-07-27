@@ -1,123 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Web Accessibility | Training" />
-    <meta
-      property="og:description"
-      content="Take a short course in Web Accessbility for eLearning"
-    />
-    <title>Web Accessibility | Training</title>
-    <link rel="shortcut icon" type="image/png" href="./images/accessibility.png"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Slab:wght@200;400&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
-  <body>
-    <nav>
-      <div class="topnav" id="myTopnav">
-        <a href="./index.html">Home</a>
-        <a href="./tools.html">Guidelines and Tools</a>
-        <a href="./semantics.html" class="active">Semantics</a>
-        <a href="./contrast.html">Contrast</a>
-        <a href="./media.html">Media</a>
-        <a href="./summary.html">Summary</a>
-        <a href="./about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </nav>
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1 class="stroke">Accessibility on the Web for eLearning</h1>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Web Accessibility | Training" />
+  <meta property="og:description" content="Take a short course in Web Accessbility for eLearning" />
+  <title>Web Accessibility | Training</title>
+  <link rel="shortcut icon" type="image/png" href="./images/accessibility.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Slab:wght@200;400&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="./index.html">Home</a>
+      <a href="./tools.html">Guidelines and Tools</a>
+      <a href="./semantics.html" class="active">Semantics</a>
+      <a href="./contrast.html">Contrast</a>
+      <a href="./media.html">Media</a>
+      <a href="./summary.html">Summary</a>
+      <a href="./about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <div class="wrapper">
-      <main>
-        <section>
-      <h2>Semantic HTML and Screen Readers</h2>
+  </nav>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 class="stroke">Accessibility on the Web for eLearning</h1>
+    </div>
+  </div>
+  <div class="wrapper">
+    <main>
+      <section>
+        <h2>Semantic HTML and Screen Readers</h2>
 
-      <p>The word "semantic" means "meaning".  The HTML elements have names and some of
-        these name imply functionality and some don't.  For example, <code>h1</code> means
-        <strong>Header 1</strong>. We know there is only one <code>h1</code> element on a 
-        web page.  If a screen reader encounter this header, it can deduce that this
-        is the primary header for the web page and create a meaningful response based
-        on that.
-      </p>
-      <p>On the other hand, the <code>div</code> element was created to help with page layout.
-      It doesn't provide any meaninful informations about the content of the document. A screen reader
-       will ignore a <code>div</code> tag.
-      </p>
-      <p>
-        In this module, we're going to look at an aspect of Semantic coding that
-        affects interactivity. An HTML <code>button</code> looks like a button
-        by default. It can be styled to looked more interactive. Semantically,
-        it is the way to code a clickable element in HTML. In this example,
-        we'll see that we can make any item clickable in the sense that we can
-        trigger an action based on a click. The problem is that a screen reader
-        won't find a clickable element unless it's a button or a link. 
-      </p>
-     
-      <section class="codesanbox">
-      <h2>
-        Interact with the Buttons in the Code Sandbox
-      </h2>
-      <p>In the code sandbox below, we show that we can style a <code>div</code> to
-        look like a button.  It's also possible to add a click event to any element
-        using JavaScript or an <code>onclick</code> HTML attribute.  This will cause 
-        problems for a person using a screen reader though.
-      </p>
-      <p>
-        Open the sandbox in a new window and ry clicking on the buttons in the sandbox.  You'll see that they all respond 
-        to click events with a JavaScript <code>alert</code>.
-      </p>
+        <p>The word "semantic" means "meaning". The HTML elements have names and some of
+          these name imply functionality and some don't. For example, <code>h1</code> means
+          <strong>Header 1</strong>. We know there is only one <code>h1</code> element on a
+          web page. If a screen reader encounter this header, it can deduce that this
+          is the primary header for the web page and create a meaningful response based
+          on that.
+        </p>
+        <p>On the other hand, the <code>div</code> element was created to help with page layout.
+          It doesn't provide any meaninful informations about the content of the document. A screen reader
+          will ignore a <code>div</code> tag.
+        </p>
+        <p>
+          In this module, we're going to look at an aspect of Semantic coding that
+          affects interactivity. An HTML <code>button</code> looks like a button
+          by default. It can be styled to looked more interactive. Semantically,
+          it is the way to code a clickable element in HTML. In this example,
+          we'll see that we can make any item clickable in the sense that we can
+          trigger an action based on a click. The problem is that a screen reader
+          won't find a clickable element unless it's a button or a link.
+        </p>
 
-      <p>ARIA is a technique for adding semantics to unsemantic web tags like 
-        <code>div</code>.  Just add attribute <code>role="button"</code> to the 
-        <code>div</code> tags and these elements will be understood to semantically 
-        behave as buttons.
-      </p>
+        <section class="codesanbox">
+          <h2>
+            Interact with the Buttons in the Code Sandbox
+          </h2>
+          <p>In the code sandbox below, we show that we can style a <code>div</code> to
+            look like a button. It's also possible to add a click event to any element
+            using JavaScript or an <code>onclick</code> HTML attribute. This will cause
+            problems for a person using a screen reader though.
+          </p>
+          <p>
+            Open the sandbox in a new window and ry clicking on the buttons in the sandbox. You'll see that they all
+            respond
+            to click events with a JavaScript <code>alert</code>.
+          </p>
 
-    </section>
+          <p>ARIA is a technique for adding semantics to unsemantic web tags like
+            <code>div</code>. Just add attribute <code>role="button"</code> to the
+            <code>div</code> tags and these elements will be understood to semantically
+            behave as buttons.
+          </p>
 
-    <h3>Embed repl.it</h3>
-    <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@RebeccaPeltz/semantic-button?lite=true"></iframe>
+        </section>
 
-    <h3>Embed codesandbox.io</h3>
-    <iframe src="https://codesandbox.io/embed/qu-semantic-button-b8sg5?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="qu-semantic-button"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+        <h3>Embed repl.it</h3>
+        <iframe frameborder="0" width="100%" height="500px"
+          src="https://replit.com/@RebeccaPeltz/semantic-button?lite=true"></iframe>
 
-   <h3>Embed glitch.com</h3>
-   <!-- Copy and Paste Me -->
-<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-  <iframe
-    src="https://glitch.com/embed/#!/embed/useful-highfalutin-freighter?path=index.html&previewSize=0"
-    title="useful-highfalutin-freighter on Glitch"
-    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-    style="height: 100%; width: 100%; border: 0;">
-  </iframe>
-</div>
+        <h3>Embed codesandbox.io</h3>
+        <iframe src="https://codesandbox.io/embed/qu-semantic-button-b8sg5?fontsize=14&hidenavigation=1&theme=dark"
+          style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" title="qu-semantic-button"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
 
-    <!-- <iframe alt="codesandbox" 
+        <h3>Embed glitch.com app</h3>
+        <!-- Copy and Paste Me -->
+        <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+          <iframe src="https://glitch.com/embed/#!/embed/useful-highfalutin-freighter?path=index.html&previewSize=100"
+            title="useful-highfalutin-freighter on Glitch"
+            allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+            style="height: 100%; width: 100%; border: 0;">
+          </iframe>
+        </div>
+        <h3>Embed glitch.com code</h3>
+        <!-- Copy and Paste Me -->
+        <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+          <iframe src="https://glitch.com/embed/#!/embed/useful-highfalutin-freighter?path=index.html&previewSize=0"
+            title="useful-highfalutin-freighter on Glitch"
+            allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+            style="height: 100%; width: 100%; border: 0;">
+          </iframe>
+        </div>
+
+        <!-- <iframe alt="codesandbox" 
       src="https://codesandbox.io/embed/qu-semantic-button-b8sg5?fontsize=14&hidenavigation=1&theme=dark" 
       title="Semantic Button Code Sandbox"
       allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; xr-spatial-tracking"
@@ -130,44 +129,45 @@
       overflow: hidden;
     "
     ></iframe> -->
-</section>
+      </section>
 
-    
-<section>
 
-      <h2>SEO Benefits to Semantic HTML</h2>
-      <p>
-      If you're using the web to distribute educational materials, you may want 
-      them to be found using search tools.  <dfn>SEO</dfn> is an acronym for 
-      Search Engine Optimization.  You can improve your web site's searchability 
-      by using semantic layout. An example of semantic layout is shown below.  
-      </p>
+      <section>
 
-      <p>The image below shows one example of a semantic layout.  When a search
-        engine web crawler encounters a page laid out like this, it has a lot easier 
-        time parsing the content.  Just like a screen reader, a web crawler benefits 
-        from a meaningful lauyout.  This can be achieved with Semantic HTML and 
-        ARIA.
-      </p>
-      <figure>
-        <img src="./images/codeproject-semantic-layout.png" alt="sematic layout" width="80%">
-        <figcaption>Sematic Web Layout from <a href="https://www.codeproject.com/Articles/146409/Semantic-HTML5-Page-Layout">Codeproject</a>
+        <h2>SEO Benefits to Semantic HTML</h2>
+        <p>
+          If you're using the web to distribute educational materials, you may want
+          them to be found using search tools. <dfn>SEO</dfn> is an acronym for
+          Search Engine Optimization. You can improve your web site's searchability
+          by using semantic layout. An example of semantic layout is shown below.
+        </p>
 
-        </figcaption>
-      </figure>
-      <div class="next-text"><a href="./contrast.html"><span class="next-icon next"></span>Colors and Contrast</a></div>
+        <p>The image below shows one example of a semantic layout. When a search
+          engine web crawler encounters a page laid out like this, it has a lot easier
+          time parsing the content. Just like a screen reader, a web crawler benefits
+          from a meaningful lauyout. This can be achieved with Semantic HTML and
+          ARIA.
+        </p>
+        <figure>
+          <img src="./images/codeproject-semantic-layout.png" alt="sematic layout" width="80%">
+          <figcaption>Sematic Web Layout from <a
+              href="https://www.codeproject.com/Articles/146409/Semantic-HTML5-Page-Layout">Codeproject</a>
 
-    </section>
+          </figcaption>
+        </figure>
+        <div class="next-text"><a href="./contrast.html"><span class="next-icon next"></span>Colors and Contrast</a>
+        </div>
+
+      </section>
     </main>
 
     <footer>
       <p>R. Peltz 2021 QU 530</p>
       <p>
-        <a href="https://github.com/rebeccapeltz/idn530" target="_blank"
-          >Code Repo</a
-        >
+        <a href="https://github.com/rebeccapeltz/idn530" target="_blank">Code Repo</a>
       </p>
     </footer>
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
