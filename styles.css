@@ -245,3 +245,8 @@ a:active.wcag-guideline {
 .next-text a:hover {
   background-color:#fff1d2 ;
 }
+
+.code-sandbox-instruct {
+  width: 80%;
+  margin: 0 auto;
+}

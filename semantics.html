@@ -64,41 +64,50 @@
           won't find a clickable element unless it's a button or a link.
         </p>
 
-        <section class="codesanbox">
+        <section class="codesandbox">
           <h2>
             Interact with the Buttons in the Code Sandbox
           </h2>
-          <p>In the code sandbox below, we show that we can style a <code>div</code> to
+          <p>You can interact with the codesandbox below by clicking on the "code" tab to
+            view the code or clicking on the "output" and then "open in new window" to run the code.
+          </p>
+          <div class="code-sandbox-instruct"><img src="images/view-run-code.png" width="80%"></div>
+          <p>If we examine the HTML code, we see that we can style a <code>div</code> to
             look like a button. It's also possible to add a click event to any element
-            using JavaScript or an <code>onclick</code> HTML attribute. This will cause
+            using JavaScript or an <code>onclick</code> HTML attribute. This can cause
             problems for a person using a screen reader though.
           </p>
           <p>
-            Open the sandbox in a new window and ry clicking on the buttons in the sandbox. You'll see that they all
-            respond
-            to click events with a JavaScript <code>alert</code>.
+            Run the code
+            in a new window and try clicking on the buttons in the sandbox. You'll see that they all
+            respond to click events with a JavaScript <code>alert</code>.
           </p>
 
           <p>ARIA is a technique for adding semantics to unsemantic web tags like
             <code>div</code>. Just add attribute <code>role="button"</code> to the
             <code>div</code> tags and these elements will be understood to semantically
-            behave as buttons.
+            behave as buttons. </p>
+           <p> If you open the sandbox, by clicking on "output" and then "open" 
+             you can create a free account 
+             on <a href="https://repl.it">repl.it</a>.  Then 
+            you can "fork" the code and try add the
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role"
+              target="_blank">ARIA role to the code</a>.
           </p>
-
+          <div class="code-sandbox-instruct"><img src="images/open-to-fork.png" width="80%"></div>
         </section>
 
         <h3>Embed repl.it</h3>
         <iframe frameborder="0" width="100%" height="500px"
-          src="https://replit.com/@RebeccaPeltz/semantic-button?lite=true"></iframe>
+          src="https://replit.com/@RebeccaPeltz/semantic-button?embed=true"></iframe>
 
-        <h3>Embed codesandbox.io</h3>
+        <!--  <h3>Embed codesandbox.io</h3>
         <iframe src="https://codesandbox.io/embed/qu-semantic-button-b8sg5?fontsize=14&hidenavigation=1&theme=dark"
           style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" title="qu-semantic-button"
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
 
         <h3>Embed glitch.com app</h3>
-        <!-- Copy and Paste Me -->
         <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
           <iframe src="https://glitch.com/embed/#!/embed/useful-highfalutin-freighter?path=index.html&previewSize=100"
             title="useful-highfalutin-freighter on Glitch"
@@ -107,14 +116,13 @@
           </iframe>
         </div>
         <h3>Embed glitch.com code</h3>
-        <!-- Copy and Paste Me -->
         <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
           <iframe src="https://glitch.com/embed/#!/embed/useful-highfalutin-freighter?path=index.html&previewSize=0"
             title="useful-highfalutin-freighter on Glitch"
             allow="geolocation; microphone; camera; midi; vr; encrypted-media"
             style="height: 100%; width: 100%; border: 0;">
           </iframe>
-        </div>
+        </div> -->
 
         <!-- <iframe alt="codesandbox" 
       src="https://codesandbox.io/embed/qu-semantic-button-b8sg5?fontsize=14&hidenavigation=1&theme=dark" 
