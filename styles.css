@@ -246,7 +246,7 @@ a:active.wcag-guideline {
   background-color:#fff1d2 ;
 }
 
-.code-sandbox-instruct {
+.code-sandbox-instruct, figure {
   width: 80%;
   margin: 0 auto;
 }
